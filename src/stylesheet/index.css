@@ -1,0 +1,44 @@
+body,
+html {
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+
+.buttons {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  display: flex;
+  gap: 10px;
+  z-index: 100;
+}
+
+.buttons button {
+  display: block;
+  background-color: #000;
+  color: #fff;
+  padding: 16px 30px;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.--none {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+@media (max-widht:768px) {
+  .buttons button {
+    font-size: 13px;
+    padding: 14px 25px;
+  }
+  
+}
