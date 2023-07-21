@@ -33,9 +33,9 @@ export default class Model {
       y:2,
     }
 
-    const texture = this.loader.load("../img01.jpg");
-    const texture02 = this.loader.load("../img02.jpg");
-    this.disp = this.loader.load("../noise.png");
+    const texture = this.loader.load("./img01.jpg");
+    const texture02 = this.loader.load("./img02.jpg");
+    this.disp = this.loader.load("./noise.png");
     const uniforms = {
       uResolution: {
         value: new Vector2(this.width,this.height),
